@@ -1,8 +1,8 @@
-import markov_chain
+import markov_chain as m
 
-data = markov_chain.readdata("words.txt")
-rule = markov_chain.makerule(data, 8)
-output = markov_chain.makestring(rule, 200)
+data = m.readdata("words.txt")
+rule = m.makerule(data, 8)
+output = m.makestring(rule, 200)
 
 string = output.split()
 print(output)
